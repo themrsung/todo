@@ -18,6 +18,7 @@ function Todo(props) {
 }
 
 function App() {
+    let number = 3
     const [todos, setTodos] = useState([
         {
             id: 1,
@@ -43,7 +44,7 @@ function App() {
 
     const addTodoHandler = () => {
         const newTodo = {
-            id: todos.length + 1,
+            id: number++,
             title: title,
             content: content,
             isDone: false
